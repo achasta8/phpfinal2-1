@@ -1,3 +1,4 @@
+
 <?php
 
 	//config file
@@ -85,13 +86,7 @@
 		mysqli_close($link);
 	}
 ?>
-
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Login</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-	<style>
+<style>
     * {
       box-sizing: border-box; 
     }
@@ -133,15 +128,13 @@
   </head>
     <nav class="col-1">Navigation
       <ul>
-        <li><a href="home.html">Home</a></li>
-             <li><a href="login.php">Sign-in</a></li>
+        <li><a href="home.php">Home</a></li>
+             <li><a href="signin.php">Sign-in</a></li>
+             <li><a href="RegiForm2.php">Create Account</a></li>
              <li><a href="cart.php">Cart</a></li>
-             <li><a href="contactus.html">Contact Us</a>
-             <li><a href="reset-password.php">Reset Password</a></li>
-             <li><a href="welcome.php">Account Managment</a></li>
+             <li><a href="contactus.html">Contact Us</a></li>
   
       </ul>
-  
     </nav>
     <div class="col-2">
         <header><img src="NorthGeorgiaTech.jpg" alt"ngtc" style="width:250px;height:125px;">CIST 2352 Final Project</header>
@@ -153,7 +146,7 @@
 		<div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
 			<label>Username</label>
 			<input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
-			<span class="help-block"><?php echo $username_err; ?>"</span>
+			<span class="help-block"><?php echo $username_err; ?></span>
 		</div>
 		
 		<div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
@@ -171,5 +164,3 @@
 	</div>
 </body>
 </html>
-	
-	
